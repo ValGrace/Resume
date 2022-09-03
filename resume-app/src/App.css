@@ -1,0 +1,118 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: rgba(8, 8, 8, 0.89);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.app-sidebar {
+  background-color: hsla(0, 0%, 95%, 0.897);
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4em;
+  color: rgb(8, 8, 8);
+  width: 30vw;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(1, 71, 82);
+}
+
+a:hover {
+  text-decoration: underline;
+} 
+
+a:visited {
+  color: rgb(94, 3, 3);
+}
+
+#username, #location {
+  margin: 0.04em;
+}
+.sep-line {
+  width: 96%;
+  height: 0.02em;
+  background-color: black;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  gap: 2em;
+}
+
+.resume-body {
+  text-align: center;
+  position: absolute;
+  width: 65vw;
+  right: 0;
+}
+
+.project {
+  text-align: justify;
+  padding: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.me-section {
+  text-align: justify;
+  padding-inline: 2em;
+}
+#project-section {
+  padding-inline: 3em;
+}
+.education-section {
+  padding-inline: 0.5em;
+}
+.education {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  
+}
+
+#prog {
+  
+  flex-grow: 1;
+  text-align: start;
+}
+
+@media only screen and (max-width: 745px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .app-sidebar {
+    position: relative;
+    width: 98vw;
+    height: 40vh;
+    bottom: 0;
+    
+  }
+
+  .resume-body {
+    left: 0;
+   top: 45%;
+  }
+
+  .me-section, .project, .education-section {
+    padding-inline: 0.4em;
+    width: 95vw;
+  }
+  .project-section {
+    padding-inline: 0.3em;
+  }
+}
